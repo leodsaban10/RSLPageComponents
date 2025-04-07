@@ -1,13 +1,21 @@
 import HomePage from '../pageobjects/homepage.js'
 
-describe('My Login application', () => {
-    it('should login with valid credentials', async () => {
-        await HomePage.open()
-
-        await LoginPage.login('tomsmith', 'SuperSecretPassword!')
-        await expect(SecurePage.flashAlert).toBeExisting()
-        await expect(SecurePage.flashAlert).toHaveText(
-            expect.stringContaining('You logged into a secure area!'))
+describe('Testing for Captcha', () => {
+    // it('should open the Home Page', async () => {
+    //     await HomePage.Open()
+    // })
+    // it('Should open the Home Page and the LeaderBoard Banner', async () => {
+    //     await HomePage.Open()
+    //     await HomePage.LeaderBoardBanner()
+    // })
+    // it('should open the Home Page and click the Adidas Logo', async () => {
+    //     await HomePage.Open()
+    //     await HomePage.AdidasLogo()
+    // })
+    it('should open the Home Page and click the Social Media Icon', async () => {
+        await HomePage.Open()
+        await HomePage.AdidasLogo()
     })
+
 })
 

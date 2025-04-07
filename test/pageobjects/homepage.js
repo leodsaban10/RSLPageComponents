@@ -1,26 +1,29 @@
-import { $, expect, browser } from '@wdio/globals'
+import { expect } from '@wdio/globals'
 
 
-class HomePage extends Page {
-
-    get inputUsername () {
-        return $('#username');
+class HomePage  {
+    get Logo () {
+        return $('//*[@alt="Adidas"]');
+    } 
+    get Banner () {
+        return $('//*[@id="leaderboard-top"]');
     }
-
-    get inputPassword () {
-        return $('#password');
+    get SocialMediaButton () {
+        return $('//*[@data-log-event="logoClick"]');
     }
-
-    get btnSubmit () {
-        return $('button[type="submit"]');
+    async Open () {
+        await browser.url('https://www.rsl.com/');
     }
-
-    async login (username, password) {
-        await this.inputUsername.setValue(username);
-        await this.inputPassword.setValue(password);
-        await this.btnSubmit.click();
+    async AdidasLogo () {
+        await this.Logo.click();
+        await browser.switchWindow('https://www.rsl.com/')
     }
-
+    async LeaderBoardBanner () {
+        await this.Banner.click();
+    }
+    async SocialMedia () {
+        await this.SocialMediaButton.click();
+    }
+    
 }
-
 export default new HomePage();
