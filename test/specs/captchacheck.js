@@ -12,9 +12,13 @@ describe('Testing for Captcha', () => {
     //     await HomePage.Open()
     //     await HomePage.AdidasLogo()
     // })
-    it('should open the Home Page and click the Social Media Icon', async () => {
-        await HomePage.Open()
-        await HomePage.AdidasLogo()
+    // it('should open the Home Page and click the Social Media Icon', async () => {
+    //     await HomePage.Open()
+    //     await HomePage.DottedMenu()
+    // })
+    it('should click the Espanol Button', async () => {
+        // const esButton = await $('//*[@id="language-selector"]/div[2]/div[1]');
+        await EspanolButton.click();
     })
 
 })
