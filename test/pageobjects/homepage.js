@@ -8,11 +8,11 @@ class HomePage  {
     get Banner () {
         return $('//*[@id="leaderboard-top"]');
     }
-    get threedotmenu () {
-        return $('//*[@class="fa-icon-svg fa-icon-svg--horizontal-dots"]');
-    }
-    get espanolButton () {
-        return $('//*[@href="https://www.rsl.com/rsl-en-espanol/index"]');
+    // get threedotmenu () {
+    //     return $('//*[@class="fa-icon-svg fa-icon-svg--horizontal-dots"]');
+    // }
+    get spanishButton () {
+        return $('ul.mls-o-navigation__secondary-list li.mls-o-navigation__secondary-item a[href="https://www.rsl.com/rsl-en-espanol/index"]');
     }
     async Open () {
         await browser.url('https://www.rsl.com/');
@@ -24,13 +24,13 @@ class HomePage  {
         await this.Logo.click();
         await browser.switchWindow('https://www.rsl.com/')
     }
-    async DottedMenu  () {
-        await this.threedotmenu.click();
-        // await browser.switchWindow('https://www.rsl.com/')
-    }
+    // async DottedMenu  () { 
+    //     await this.threedotmenu.click();
+    //     // await browser.switchWindow('https://www.rsl.com/')
+    // }
     async EspanolButton () {
-        await this.espanolButton.click();
-        await browser.switchWindow('https://www.rsl.com/rsl-en-espanol/index')
+        await this.spanishButton.click();
+        // await browser.switchWindow('https://www.rsl.com/rsl-en-espanol/index')
     }
 }
 export default new HomePage();

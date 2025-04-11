@@ -17,8 +17,8 @@ describe('Testing for Captcha', () => {
     //     await HomePage.DottedMenu()
     // })
     it('should click the Espanol Button', async () => {
-        // const esButton = await $('//*[@id="language-selector"]/div[2]/div[1]');
-        await EspanolButton.click();
+        await HomePage.Open()
+        await HomePage.EspanolButton()
     })
 
 })
