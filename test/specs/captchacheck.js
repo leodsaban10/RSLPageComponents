@@ -12,9 +12,13 @@ describe('Testing for Captcha', () => {
         await HomePage.OpenRSLPage()
         await HomePage.AdidasLogo()
     })
-    it ('should open rsl in spanish article', async () => {
+    it ('should open rsl in spanish article one', async () => {
         await HomePage.OpenRSLPage()
-        await HomePage.RSLEnEspanol()
+        await HomePage.RSLEnEspanol_One()
+    })
+    it ('should open rsl in spanish article two', async () => {
+        await HomePage.OpenRSLPage()
+        await HomePage.RSLEnEspanol_Two()
     })
     // it('should open the Home Page and click the Social Media Icon', async () => {
     //     await HomePage.Open()
