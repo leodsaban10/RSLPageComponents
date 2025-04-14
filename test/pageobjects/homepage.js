@@ -14,12 +14,12 @@ class HomePage  {
     get rslinspanisharticle_two () {
         return $('//*[@aria-label="2 / 10"]');
     }
-    // get threedotmenu () {
-    //     return $('//*[@class="fa-icon-svg fa-icon-svg--horizontal-dots"]');
-    // }
-    // get espanolBtn() {
-    //    return $('a[href="https://www.rsl.com/rsl-en-espanol/index"]')
-    // }
+    get LatestNews_one () {
+        return $('//*[@aria-label="1 / 16"]');
+    }
+    get LatestNews_two () {
+        return $('//*[@aria-label="2 / 16"]');
+    }
     async OpenRSLPage () {
         await browser.url('https://www.rsl.com/');
     }
@@ -36,16 +36,12 @@ class HomePage  {
     }
     async RSLEnEspanol_Two () {
         await this.rslinspanisharticle_two.click();
-        // await browser.switchWindow('https://www.rsl.com/rsl-en-espanol/index')
     }
-    // Not done yet
-    // async DottedMenu  () { 
-    //     await this.threedotmenu.click();
-    //     // await browser.switchWindow('https://www.rsl.com/')
-    // }
-    // async EspanolButton() {
-    //     await this.espanolBtn.waitForClickable({ timeout: 7000 });
-    //     await this.espanolBtn.click();
-    // }
+    async LatestNewsArticle_One () {
+        await this.LatestNews_one.click();
+    }
+    async LatestNewsArticle_Two () {
+        await this.LatestNews_two.click();
+    }
 }
 export default new HomePage();
