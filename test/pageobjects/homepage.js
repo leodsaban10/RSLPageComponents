@@ -20,6 +20,15 @@ class HomePage  {
     get LatestNews_two () {
         return $('//*[@aria-label="2 / 16"]');
     }
+    get UtahRoyals_one () {
+        return $('//*[@aria-label="1 / 12"]');
+    }
+    get UtahRoyals_two () {
+        return $('//*[@aria-label="2 / 12"]');
+    }
+    get RSL_Logo () {
+        return $('//*[@title="Real Salt Lake"]');
+    }
     async OpenRSLPage () {
         await browser.url('https://www.rsl.com/');
     }
@@ -42,6 +51,15 @@ class HomePage  {
     }
     async LatestNewsArticle_Two () {
         await this.LatestNews_two.click();
+    }
+    async UtahRoyalsArticle_One () {
+        await this.UtahRoyals_one.click();
+    }
+    async UtahRoyalsArticle_Two () {
+        await this.UtahRoyals_two.click();
+    }
+    async RSL_LogoTopLeftCorner () {
+        await this.RSL_Logo.click();
     }
 }
 export default new HomePage();

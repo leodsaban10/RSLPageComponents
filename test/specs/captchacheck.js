@@ -24,9 +24,21 @@ describe('Testing for Captcha', () => {
     //     await HomePage.OpenRSLPage()
     //     await HomePage.LatestNewsArticle_One()
     // })
-    it('should open Latest News article two', async () => {
+    // it ('should open Latest News article two', async () => {
+    //     await HomePage.OpenRSLPage()
+    //     await HomePage.LatestNewsArticle_Two()
+    // })
+    // it ('should open Utah Royals article one', async () => {
+    //     await HomePage.OpenRSLPage()
+    //     await HomePage.UtahRoyalsArticle_One()
+    // })
+    // it ('should open Utah Royals article two', async () => {
+    //     await HomePage.OpenRSLPage()
+    //     await HomePage.UtahRoyalsArticle_Two()
+    // })
+    it ('should open Utah Royals article three', async () => {
         await HomePage.OpenRSLPage()
-        await HomePage.LatestNewsArticle_Two()
+        await HomePage.RSL_LogoTopLeftCorner()
     })
 })
 
