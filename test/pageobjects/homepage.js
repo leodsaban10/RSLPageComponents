@@ -8,6 +8,9 @@ class HomePage  {
     get Banner () {
         return $('//*[@id="leaderboard-top"]');
     }
+    get rslinspanisharticle () {
+        return $('//*[@aria-label="1 / 10"]');
+    }
     // get threedotmenu () {
     //     return $('//*[@class="fa-icon-svg fa-icon-svg--horizontal-dots"]');
     // }
@@ -23,6 +26,10 @@ class HomePage  {
     async AdidasLogo () {
         await this.Adidas_Logo.click();
         await browser.switchWindow('https://www.rsl.com/')
+    }
+    async RSLEnEspanol () {
+        await this.rslinspanisharticle.click();
+        // await browser.switchWindow('https://www.rsl.com/rsl-en-espanol/index')
     }
     // Not done yet
     // async DottedMenu  () { 
