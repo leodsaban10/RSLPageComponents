@@ -1,42 +1,42 @@
 import HomePage from '../pageobjects/homepage.js'
 
 describe('Testing for Captcha', () => {
-    // it('should open the RSL Home Page', async () => {
-    //     await HomePage.OpenRSLPage()
-    // })
-    // it('Should open the Home Page and the LeaderBoard Banner', async () => {
-    //     await HomePage.OpenRSLPage()
-    //     await HomePage.LeaderBoardBanner()
-    // })
-    // it('should open the Home Page and click the Adidas Logo', async () => {
-    //     await HomePage.OpenRSLPage()
-    //     await HomePage.AdidasLogo()
-    // })
-    // it ('should open rsl in spanish article one', async () => {
-    //     await HomePage.OpenRSLPage()
-    //     await HomePage.RSLEnEspanol_One()
-    // })
-    // it ('should open rsl in spanish article two', async () => {
-    //     await HomePage.OpenRSLPage()
-    //     await HomePage.RSLEnEspanol_Two()
-    // })
-    // it ('should open Latest News article one', async () => {
-    //     await HomePage.OpenRSLPage()
-    //     await HomePage.LatestNewsArticle_One()
-    // })
-    // it ('should open Latest News article two', async () => {
-    //     await HomePage.OpenRSLPage()
-    //     await HomePage.LatestNewsArticle_Two()
-    // })
-    // it ('should open Utah Royals article one', async () => {
-    //     await HomePage.OpenRSLPage()
-    //     await HomePage.UtahRoyalsArticle_One()
-    // })
-    // it ('should open Utah Royals article two', async () => {
-    //     await HomePage.OpenRSLPage()
-    //     await HomePage.UtahRoyalsArticle_Two()
-    // })
-    it ('should open Utah Royals article three', async () => {
+    it('should open the RSL Home Page', async () => {
+        await HomePage.OpenRSLPage()
+    })
+    it('Should open the Home Page and the LeaderBoard Banner', async () => {
+        await HomePage.OpenRSLPage()
+        await HomePage.LeaderBoardBanner()
+    })
+    it('should open the Home Page and click the Adidas Logo', async () => {
+        await HomePage.OpenRSLPage()
+        await HomePage.AdidasLogo()
+    })
+    it ('should open rsl in spanish article one', async () => {
+        await HomePage.OpenRSLPage()
+        await HomePage.RSLEnEspanol_One()
+    })
+    it ('should open rsl in spanish article two', async () => {
+        await HomePage.OpenRSLPage()
+        await HomePage.RSLEnEspanol_Two()
+    })
+    it ('should open Latest News article one', async () => {
+        await HomePage.OpenRSLPage()
+        await HomePage.LatestNewsArticle_One()
+    })
+    it ('should open Latest News article two', async () => {
+        await HomePage.OpenRSLPage()
+        await HomePage.LatestNewsArticle_Two()
+    })
+    it ('should open Utah Royals article one', async () => {
+        await HomePage.OpenRSLPage()
+        await HomePage.UtahRoyalsArticle_One()
+    })
+    it ('should open Utah Royals article two', async () => {
+        await HomePage.OpenRSLPage()
+        await HomePage.UtahRoyalsArticle_Two()
+    })
+    it ('should click on RSL Logo on the top left corner of the Home Page', async () => {
         await HomePage.OpenRSLPage()
         await HomePage.RSL_LogoTopLeftCorner()
     })

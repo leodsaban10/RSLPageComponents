@@ -41,7 +41,6 @@ class HomePage  {
     }
     async RSLEnEspanol_One () {
         await this.rslinspanisharticle_one.click();
-        // await browser.switchWindow('https://www.rsl.com/rsl-en-espanol/index')
     }
     async RSLEnEspanol_Two () {
         await this.rslinspanisharticle_two.click();
